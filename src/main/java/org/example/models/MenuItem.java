@@ -1,8 +1,5 @@
 package org.example.models;
 
-import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 
@@ -11,8 +8,6 @@ import jakarta.validation.constraints.Positive;
  * @author kushalsheth
  * @since 08/11/25
  */
-@Data
-@Document
 public class MenuItem {
     @NotBlank(message = "Menu item name is required")
     private String name;
