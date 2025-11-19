@@ -12,7 +12,6 @@ public class MenuItem {
     @NotBlank(message = "Menu item name is required")
     private String name;
 
-    @NotBlank(message = "Description is required")
     private String description;
 
     @Positive(message = "Price must be positive")
